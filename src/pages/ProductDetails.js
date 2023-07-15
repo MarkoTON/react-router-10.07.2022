@@ -4,7 +4,7 @@ import { Route, useParams, useRouteMatch, Link, Switch, useHistory } from "react
 import Offers from "./Offers"
 
 export default function ProductDetails() {
-  const { id } = useParams()
+  const { id } = useParams() // U ovom slucaju je to index koji dobijamo iz mapiranja
   const { path } = useRouteMatch() // Path je uhvatio nekako lose.
   const history = useHistory();
 

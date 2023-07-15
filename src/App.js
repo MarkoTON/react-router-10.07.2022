@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
+import { BrowserRouter,NavLink, Route, Switch } from 'react-router-dom'
 
 // pages
 import Home from './pages/Home'
@@ -14,9 +14,9 @@ function App() {
       <BrowserRouter>
         <nav>
           <h1>The Ninja Clothing Company</h1>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/products">Products</Link>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/products">Products</NavLink>
         </nav>
         {/* Unutar Switch-a se menjaju stranice. Glavni kostur ostaje a to je u ovom slucaju <nav> */}
         <Switch>
